@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	​<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+<style type="text/css">
+
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+    #cont{
+		
+		background-image: url("bg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 1366px;
+		height:580px;
+		position: absolute;
+			}
+    #nav{
+		background-color:
+#FFFFFE;
+		height: 65px;
+		width: 1366px;
+		position: relative;
+	}
+	#logo{
+	
+		  		position:absolute;
+           		left:75px;
+           		top:9px;
+	}
+	#title{
+		position: absolute;
+        left:145px;
+        top: -10px;
+        font-family: 'Cute Font', cursive;
+        font-size: 60px;
+	}
+	#lis{
+		display: inline-block;
+
+	}
+	li:hover{
+		border-bottom-style: solid; 
+	}
+	li{
+		display: inline-block;
+		padding: -5px;
+		font-family: 'Cute Font', cursive;
+		top:-1px;
+		position: absolute;
+		font-size: 50px;
+	}
+	li a{
+		text-decoration: none;
+		color: black;
+	}
+	li a:active{
+	border-bottom-style: solid;	
+	}
+	#home{
+		left: 700px;
+
+	}
+	#Ar{
+		left:800px;
+	}
+    #lastbutt{
+            border-radius: 5px 5px 5px 5px;
+            color:white;
+            background-color: #619F4E;
+            font-weight: bold;
+            width:200px;
+            height:40px;
+            left:15px;
+            top:400px;
+            position: absolute;
+            border-color: #3B6E22;
+            border-width: 1px;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: Helvetica;
+            cursor: pointer;}
+   #intro1{
+           	font-family: Helvetica;
+           	font-weight: bold;
+           	font-size: 37px;
+           	top: 20px;
+           	left: 15px;
+           	position: absolute;
+           	color: white
+           }
+           #intro2{
+           	font-family: Helvetica;
+           	color: white;
+           	position: absolute;
+           	left:15px;
+           	top:80px;
+           	font-size: 20px;
+           }
+	.form1{
+           		position: absolute;
+           		height: 34px;
+           		border-radius: 5px 5px 5px 5px;
+           		border-style: solid;
+           		border-width: 1px;
+           		border-color: #BDC7D8;
+           
+
+           	}
+           	  #name{
+           	right: 880px;
+           	top:130px;
+           	position: absolute;
+           	width:435px;
+           	height: 20px;
+           	font-size: 18px;
+            padding: 10px;           
+           }
+            #age{
+            	position: absolute;
+           	width:435px;
+           	height: 20px;
+           	font-size: 18px;
+            padding: 10px; 
+            top:170px;
+            right:880px;
+            margin-top: 15px;
+            }
+             #height{
+           	position: absolute;
+           	width:435px;
+           	height: 20px;
+           	font-size: 18px;
+            padding: 10px; 
+            top:225px;
+            right:880px;
+            margin-top: 12px;}
+             #weight{
+           	position: absolute;
+           	width:435px;
+           	height: 20px;
+           	font-size: 18px;
+            padding: 10px; 
+            top:280px;
+            right:880px;
+            margin-top: 12px;}
+             #rm
+           {
+            position: absolute;
+            font-family:Helvetica;
+            right:1320px;
+            font-weight: bold;
+            top:365px;
+           }
+           #rmw{
+            position: absolute;
+            font-family: Helvetica;
+           font-size: 20px;
+            top:366px;
+            right:1255px;
+           }
+           #rf{ position: absolute;
+            top:365px;
+            right:1210px;
+
+           }
+           #rfw{
+            position: absolute;
+            top: 365px;
+            font-family: Helvetica;
+            font-size: 20px;
+           
+            right:1165px;
+           }
+           @media only screen and (max-width: 600px;){
+
+           }
+</style>
+</head>
+<body>
+	<div id="nav">
+	
+		<div id="title">Diet For Life...</div>
+		<ul id="lis"><li id="home" ><a href="toregister.html">Home</a></li><li id="Ar" href="Register.html"><a href="Register.html">Already Registered</a></li></ul>
+	</div>
+	<div id="cont">
+<p id="intro1">Create an account</p>
+	<p id="intro2">It's free and always will be to plan ur Diet</p>
+<form>	<input type="text" name="name" id="name" class="form1" placeholder="Name...">
+	<input type="number" name="age" id="age" class="form1" placeholder="Age">
+  <input type="radio" name="gender" value="male"id="rm"><span id="rmw">Female</span>
+  <input type="radio" name="gender" value="female" id="rf"><span id="rfw">Male</span>
+
+    <input type="number" name="height" id="height"class="form1" placeholder="height(in cm)">
+    <input type="number" name="weight" id="weight"class="form1" placeholder="weight(in kg)">
+    <button onclick="storing()" id="lastbutt">Sign Up</button>
+</form>
+</div>
+
+	<script type="text/javascript">
+		function creator(name,age,height,weight){
+			this.name=name;
+			this.age=age;
+			this.height=height;
+			this.weight=weight;
+		}
+		function storing() {
+      var count=0;
+			var name=document.getElementById('name').value;
+			var age=document.getElementById("age").value;
+			var height=document.getElementById("height").value;
+			var weight=document.getElementById('weight').value;
+          for (var key in localStorage){
+  if(name==key){
+    alert("this name is Already Registered");
+    count++;
+  }}
+  if(age==""||height==""||weight=="") {
+    alert("Everything Is To Be Filled");
+  }
+  if(count==0&&age!=""&&height!=""&&weight!=""&&typeof age=="number"&&typeof height=="number"&&typeof weight=="number")
+    { var person= new creator(name,age,height,weight);
+        
+          
+            localStorage.setItem(name,JSON.stringify(person));
+            var obj=JSON.parse(localStorage.getItem(name));
+          
+               alert("Registered Successfully");}else{
+                alert("Please Enter the Valid Value");
+               }
+}             
+</script>
+</body>
+</html>

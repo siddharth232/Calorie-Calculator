@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registered</title>
+	<link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+
+ <style type="text/css">
+ 	 #nav{
+		background-color:
+#FFFFFE;
+		height: 65px;
+		width: 100%;
+		position: relative;
+	}
+	#title{
+		position: absolute;
+        left:145px;
+        top: -10px;
+        font-family: 'Cute Font', cursive;
+        font-size: 60px;
+	}
+	#lis{
+		display: inline-block;
+
+	}
+	li:hover{
+		border-bottom-style: solid; 
+	}
+	li{
+		display: inline-block;
+		padding: -5px;
+		font-family: 'Cute Font', cursive;
+		top:-10px;
+		position: absolute;
+		font-size:60px;
+	}
+	li a{
+		text-decoration: none;
+		color: black;
+	}
+	li a:active{
+	border-bottom-style: solid;	
+	}
+
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	#home{
+		left: 700px;
+
+	}
+	#Ar{
+		left:800px;
+	}
+	#cont{
+		margin: 0px;
+		background-image: url("bg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		height:600px;
+		position: absolute;
+			}
+.form1{
+           	position: absolute;
+           	height: 34px;
+           	border-radius: 5px 5px 5px 5px;
+           	border-style: solid;
+           	border-width: 1px;
+           	border-color: #BDC7D8;
+            overflow: hidden;
+           	position: absolute;
+           	width:435px;
+           	height: 20px;
+           	font-size: 18px;
+            padding: 10px; 
+            top:190px;
+            right:880px;
+            display: none;
+
+           	}
+#fooditem{
+            position: absolute;
+           	height: 34px;
+           	border-radius: 5px 5px 5px 5px;
+           	border-style: solid;
+           	border-width: 1px;
+           	border-color: #BDC7D8;
+            overflow: hidden;
+           	position: absolute;
+           	width:435px;
+           	height: 20px;
+           	font-size: 18px;
+            padding: 10px; 
+            right: 880px;
+           	top:130px;
+            display: none;
+
+
+}
+           	.form2{
+           	position: absolute;
+           	height: 34px;
+           	border-radius: 5px 5px 5px 5px;
+           	border-style: solid;
+           	border-width: 1px;
+            border-color: black;
+            overflow: hidden;
+           	position: absolute;
+           	width:400px;
+           	height: 20px;
+           	font-size: 18px;
+            padding: 10px; 
+            right:100px;
+           	top:-60px;
+
+           	}
+           	#butt{
+            width:70px;
+           	background-color: black;
+           	font-family: arial;
+           	color: white;
+           	height: 40px;
+           	position:absolute;
+           	font-size:15px;
+           	border-color: #29487D;
+           	border-width:1px;
+           	top:-60px;
+           	right:20px;
+           	font-weight:bold;
+           	letter-spacing: -1px;
+           	cursor: pointer;
+           }
+           #toadd{
+           		border-radius: 5px 5px 5px 5px;
+           	color:white;
+           	background-color: #619F4E;
+           	font-weight: bold;
+           	width:100px;
+           	
+           	height:40px;
+           	right:750px;
+           	top:191px;
+           	position: absolute;
+           	border-color: #3B6E22;
+           	border-width: 1px;
+           	box-sizing: border-box;
+           	font-size: 20px;
+           	font-family: Helvetica;
+           	cursor: pointer;
+            display: none;
+           }
+           
+          #check{
+
+              display: none; 
+              border-radius: 5px 5px 5px 5px;
+            color:white;
+            background-color: #619F4E;
+            font-weight: bold;
+            width:100px;
+            
+            height:40px;
+            right:1240px;
+            top:250px;
+            position: absolute;
+            border-color: #3B6E22;
+            border-width: 1px;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: Helvetica;
+            cursor: pointer;}
+            #result{
+              height:100px;
+              width:50%;
+              left:600px;
+              position: absolute;
+              top:20px;
+              display: none;
+              opacity: 0.5;
+   
+            }
+            #res{
+              font-family:'Cute Font', cursive;
+              font-size: 50px; 
+              color: black;
+            }
+            #Re{
+              height: 450px;
+              width: 40%;
+            }
+            #line{
+              border-radius: 5px 5px 5px 5px;
+              border-style: dashed;
+              border-color: black;
+                         background-color:#f9f9f9;
+            }
+            #Re{
+              margin: 10px;
+              width: 700px;
+              font-size: 30px;
+             
+            }
+            #lo{
+              display: none; 
+              border-radius: 5px 5px 5px 5px;
+            color:white;
+            background-color: #619F4E;
+            font-weight: bold;
+            width:100px;
+            
+            height:40px;
+            right:1090px;
+            top:250px;
+            position: absolute;
+            border-color: #3B6E22;
+            border-width: 1px;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: Helvetica;
+            cursor: pointer;
+            }
+
+ </style>
+</head>
+<body>
+<div id="nav">
+	
+		<div id="title">Diet For Life...!</div>
+		<ul id="lis"><li id="home" ><a href="toregister.html">Home</a></li><li id="Ar" href="Register.html"></ul>
+	</div>
+	<div id="cont">
+	<input type="text" name="name" id="name" placeholder="Enter Registered Name" class="form2">
+	<input type="text" name="fooditem" id="fooditem" placeholder="Food Items" clas="form1">
+	<input type="number" name="calorie" id="calorie" placeholder="Calories" class="form1">
+	<button onclick="ADD()" id="toadd">Add</button>
+	<button onclick="check()" id="butt" >Log In</button>
+  <button onclick="tocheck()" id="check">Check</button>
+  <button onclick="location.reload()" id="lo">LogOut</button>
+  <div id="result">
+  <fieldset id="line">
+    <legend id="res">Result</legend>
+    <div id="Re"></div>
+  </fieldset>
+</div>
+</div>
+<script type="text/javascript">
+  var cal=0,bmr=0,name,obj;
+  function ADD(){
+       cal=cal+document.getElementById('calorie').value;
+       document.getElementById('calorie').value="";
+       document.getElementById("fooditem").value="";
+  }
+       function check(){
+     name=document.getElementById('name').value;
+     obj=JSON.parse(localStorage.getItem(name));
+     if(typeof obj.name==undefined)
+     {
+      alert("Enter the Registered Name");
+     }else{
+      document.getElementById("calorie").style.display="inline-block";
+      document.getElementById("fooditem").style.display="inline-block";
+      document.getElementById("toadd").style.display="inline-block";
+      document.getElementById("check").style.display="inline-block";
+      document.getElementById("lo").style.display="inline-block";
+     } }
+     function tocheck(){
+      document.getElementById("result").style.display="inline-block";
+      bmr= (9.247*obj.weight) +(3.098*obj.height)-(4.33*obj.age)+447.593;
+      if(bmr<cal){
+        document.getElementById("Re").innerHTML="Dear "+obj.name+",You have taken more number of calories .this may leads to obesity .High calorie intake will cause stress on your body. High caloric foods are high in fats and sugars and extraordinary intake of these types of foods increase your risk factors for type 2 diabetes, heart disease and cancers. If you eat a large amount of food you will stress your digestive process which can decrease your length of life as well as your quality of living. Keep your calorie intake equal to your calorie output. Check out calorie counters for the proper amounts of foods to eat to ensure that you are not too heavy to move around or too weak to function.Keep tracking your calories";
+
+      }
+      else if (bmr==cal) {
+        document.getElementById("Re").innerHTML="Dear "+obj.name+",You have taken correct amount of calories.Keep it up and keep tracking your calories";
+      }
+      else if (bmr>cal) {
+        document.getElementById("Re").innerHTML="Dear "+obj.name+",you have taken less number of calories.When your caloric intake is too low you will have several health problems. One problem is reduced muscles mass. Your body searches for sources of energy to just keep vital organs functioning and it will turn to your muscle mass for those energy foods. This is called catabolism. Your metabolic rate will drop dramatically if you eat too little calories and after three days of low calorie intake this will compound your muscle mass loss.Keep Tracking your calories";
+      }
+     }
+       
+ </script>
+</body>
+</html>
